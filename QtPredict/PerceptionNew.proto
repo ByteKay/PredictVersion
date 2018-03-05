@@ -1,0 +1,18 @@
+option optimize_for = LITE_RUNTIME;
+message SuccInfoNew {
+	required int32 id = 1;
+	required float cp = 2;
+	optional bool isNext = 3;
+}
+
+message NodeNew {
+	required int32 id = 1;
+	required uint64 uniqKey = 2;
+	repeated string keys = 3;
+	repeated SuccInfoNew succinfo = 4;
+}
+
+message PerceptionNew {
+	required int32 nodeNum = 1;
+	repeated NodeNew nodes = 2;
+}

@@ -1,0 +1,9 @@
+option optimize_for = LITE_RUNTIME;
+message PathAndKey {
+	required string path = 1;
+	required uint64 key = 2;
+}
+
+message PathAndKeys {
+	repeated PathAndKey nodes = 1;
+}

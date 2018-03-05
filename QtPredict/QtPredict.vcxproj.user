@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;.\platforms</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;.\platforms</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>172.10.1.24 8888</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;.\platforms</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>D:/测试1/config D:/测试1/dxkp.pre D:/测试1/df.txt D:/测试1/Perception.txt</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;.\platforms</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>D:/测试1/config D:/测试1/dxkp.pre D:/测试1/df.txt D:/测试1/Perception.txt</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;.\platforms</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>D:/测试1/key.bin D:/测试1/generator.bin D:/测试1/df.txt D:/测试1/Perception.txt</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;.\platforms</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>C:\Perception.txt C:\cci.bin C:\pathAndKeys.txt</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>

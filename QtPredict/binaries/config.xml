@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<PredictConfig>
+	<IP value="127.0.0.1"/>
+	<Port value="8888"/>
+	<Check value="0"/>
+	<HasKeyFile value="0"/>
+	<HasGenerateKeyFile value="1"/>
+	<GenerateKeyFile value="generator.bin"/>
+	<PackageFile value="df-xh-object-keys.txt"/>
+	<PerceptionFile value="Perception.txt"/>
+	<BKQuntityThreshold value="0.10000"/>
+	<BKSizeThreshold value="0.75000"/>
+	<BKMinSize value="0.00000"/>
+	<LengthKey value="0"/>
+	<DecreaseThreshold value="0.90000"/>
+	<MaxPredictNumber value="15"/>
+	<PreIndexNumber value="5"/>
+	<WriteTempFile value="0"/>
+</PredictConfig>
+

@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Console_2D_Debug|Win32">
+      <Configuration>Release_Console_2D_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Console_2D|Win32">
+      <Configuration>Release_Console_2D</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Console_Debug|Win32">
+      <Configuration>Release_Console_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Console|Win32">
+      <Configuration>Release_Console</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Debug|Win32">
+      <Configuration>Release_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B72477DB-679D-4075-B221-902CD6AD3576}</ProjectGuid>
+    <RootNamespace>QtPredict</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)binaries\</OutDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">
+    <OutDir>$(ProjectDir)binaries\</OutDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <TargetName>$(ProjectName)_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">
+    <OutDir>$(ProjectDir)binaries\</OutDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <TargetName>$(ProjectName)_console</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">
+    <OutDir>$(ProjectDir)binaries\</OutDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <TargetName>$(ProjectName)_console_2d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">
+    <OutDir>$(ProjectDir)binaries\</OutDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <TargetName>$(ProjectName)_console_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">
+    <OutDir>$(ProjectDir)binaries\</OutDir>
+    <ExecutablePath>$(VC_ExecutablePath_x86);$(WindowsSDK_ExecutablePath);$(VS_ExecutablePath);$(MSBuild_ExecutablePath);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);</ExecutablePath>
+    <TargetName>$(ProjectName)_console_debug</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../protobuf-2.5.0/src;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles\;../rapidxml/;../DataStructures/include;../QtPropertyBrowser/src;../libevent/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_UNICODE;_WIN32;WIN32;UNICODE;CHINESE_PATH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;../binaries;../libevent/lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libprotobuf.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;DataStructures.lib;Qt5PropertyBrowser.lib;ws2_32.lib;wsock32.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../LoggingLibrary;../protobuf-2.5.0/src;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles\;../rapidxml/;../DataStructures/include;../QtPropertyBrowser/src;../libevent/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>UNICODE;_UNICODE;_WIN32;WIN32;CHINESE_PATH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;../binaries;../libevent/lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libprotobuf.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;DataStructures.lib;Qt5PropertyBrowser.lib;ws2_32.lib;wsock32.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../LoggingLibrary;../protobuf-2.5.0/src;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles\;../rapidxml/;../DataStructures/include;../QtPropertyBrowser/src;../libevent/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_UNICODE;_WIN32;WIN32;UNICODE;CONSOLE;CHINESE_PATH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;../binaries;../libevent/lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libprotobuf.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;DataStructures.lib;Qt5PropertyBrowser.lib;ws2_32.lib;wsock32.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../LoggingLibrary;../protobuf-2.5.0/src;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles\;../rapidxml/;../DataStructures/include;../QtPropertyBrowser/src;../libevent/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_UNICODE;_WIN32;WIN32;UNICODE;CONSOLE;CHINESE_PATH;COCOS2D;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;../binaries;../libevent/lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libprotobuf.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;DataStructures.lib;Qt5PropertyBrowser.lib;ws2_32.lib;wsock32.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../LoggingLibrary;../protobuf-2.5.0/src;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles\;../rapidxml/;../DataStructures/include;../QtPropertyBrowser/src;../libevent/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_UNICODE;_WIN32;WIN32;UNICODE;CONSOLE;CHINESE_PATH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;../binaries;../libevent/lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libprotobuf.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;DataStructures.lib;Qt5PropertyBrowser.lib;ws2_32.lib;wsock32.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../LoggingLibrary;../protobuf-2.5.0/src;$(QTDIR)\include;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtCore;$(QTDIR)\mkspecs\win32-msvc2013;.\GeneratedFiles\;../rapidxml/;../DataStructures/include;../QtPropertyBrowser/src;../libevent/include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>_UNICODE;_WIN32;WIN32;UNICODE;CONSOLE;CHINESE_PATH;COCOS2D;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalOptions>/D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;../binaries;../libevent/lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libprotobuf.lib;qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Widgets.lib;DataStructures.lib;Qt5PropertyBrowser.lib;ws2_32.lib;wsock32.lib;libevent.lib;libevent_core.lib;libevent_extras.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SupportUnloadOfDelayLoadedDLL>
+      </SupportUnloadOfDelayLoadedDLL>
+      <AdditionalOptions>/NODEFAULTLIB:LIBCMT %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>
+      </DelayLoadDLLs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ccgamec_config.pb.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_PredictCustomConfig.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_PredictKeyHandleUI.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_PredictMainWindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_QClickLabel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Perception.pb.cc" />
+    <ClCompile Include="PerceptionNew.pb.cc" />
+    <ClCompile Include="PredictCalculate.cpp" />
+    <ClCompile Include="PredictCheck.cpp" />
+    <ClCompile Include="PredictChinesePath.cpp" />
+    <ClCompile Include="PredictCommand.cpp" />
+    <ClCompile Include="PredictCommandFactory.cpp" />
+    <ClCompile Include="PredictConfig.cpp" />
+    <ClCompile Include="PredictConsole.cpp" />
+    <ClCompile Include="PredictConsole2D.cpp" />
+    <ClCompile Include="PredictCustomConfig.cpp" />
+    <ClCompile Include="PredictGameThread.cpp" />
+    <ClCompile Include="PredictGenerator2DKeyCommand.cpp" />
+    <ClCompile Include="PredictKeyHandleUI.cpp" />
+    <ClCompile Include="PredictKMeans.cpp" />
+    <ClCompile Include="PredictOriginalKeyUploadCommand.cpp" />
+    <ClCompile Include="PredictPrint.cpp" />
+    <ClCompile Include="PredictServer.cpp" />
+    <ClCompile Include="PredictGeneratorKey.cpp" />
+    <ClCompile Include="PredictGeneratorKeyCommand.cpp" />
+    <ClCompile Include="PredictMainWindow.cpp" />
+    <ClCompile Include="PredictMessage.cpp" />
+    <ClCompile Include="PredictProtobuf.cpp" />
+    <ClCompile Include="PredictServerImpl.cpp" />
+    <ClCompile Include="PredictSession.cpp" />
+    <ClCompile Include="PredictSessionNameCommand.cpp" />
+    <ClCompile Include="PredictStatistic.cpp" />
+    <ClCompile Include="QClickLabel.cpp" />
+    <ClCompile Include="QtMain.cpp" />
+    <ClCompile Include="Resource.pb.cc">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Template2D.pb.cc" />
+    <ClCompile Include="XMLUtils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <SubType>Designer</SubType>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ccgamec_config.pb.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_custom.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_generator.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Perception.pb.h" />
+    <ClInclude Include="PerceptionNew.pb.h" />
+    <ClInclude Include="PredictCalculate.h" />
+    <ClInclude Include="PredictCheck.h" />
+    <ClInclude Include="PredictChinesePath.h" />
+    <ClInclude Include="PredictCommand.h" />
+    <ClInclude Include="PredictCommandFactory.h" />
+    <ClInclude Include="PredictCommonType.h" />
+    <ClInclude Include="PredictConfig.h" />
+    <CustomBuild Include="PredictKeyHandleUI.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="PredictCustomConfig.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="PredictConsole.h" />
+    <ClInclude Include="PredictConsole2D.h" />
+    <ClInclude Include="PredictGameThread.h" />
+    <ClInclude Include="PredictGenerator2DKeyCommand.h" />
+    <ClInclude Include="PredictKMeans.h" />
+    <ClInclude Include="PredictOriginalKeyUploadCommand.h" />
+    <ClInclude Include="PredictPrint.h" />
+    <ClInclude Include="PredictServer.h" />
+    <ClInclude Include="PredictGeneratorKey.h" />
+    <ClInclude Include="PredictGeneratorKeyCommand.h" />
+    <ClInclude Include="PredictMessage.h" />
+    <ClInclude Include="PredictProtobuf.h" />
+    <ClInclude Include="PredictServerImpl.h" />
+    <ClInclude Include="PredictSession.h" />
+    <ClInclude Include="PredictSessionNameCommand.h" />
+    <ClInclude Include="PredictStatistic.h" />
+    <ClInclude Include="PredictTypeDefines.h" />
+    <CustomBuild Include="QClickLabel.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="Resource.pb.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="Template2D.pb.h" />
+    <ClInclude Include="XMLUtils.h" />
+    <CustomBuild Include="PredictMainWindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\moc_%(Filename).cpp"  -DWIN32 -D_WINDOWS -DUNICODE -DWIN64 -D_EDITOR_ENABLE -D_QT_RENDERWINDOW -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -D_MBCS "-I.\..\..\..\hex_shared\Qt5\qt-solutions\QtPropertyBrowser\src" "-I.\..\Dependencies\UVMappingLibrary" "-I.\..\..\shared\HexSceneFile\test\DevIL\include" "-I.\..\Dependencies\LightmappingLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source\singleFileSystem" "-I$(QTDIR)\include" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtANGLE" "-I$(QTDIR)\include\QtCore" "-I.\release" "-I$(QTDIR)\mkspecs\win32-msvc2013" "-I.\GeneratedFiles" "-I.\..\.." "-I.\..\..\..\hex_shared\ServerData" "-I.\..\..\..\hex_shared\HexNet\Source" "-I.\..\..\shared\HexMeshFile\include" "-I.\..\..\shared\HexMeshFile\include\meshutils" "-I.\..\..\..\hex_shared" "-I.\..\..\..\hex_shared\FastMathLibrary" "-I.\..\..\..\hex_shared\DataStructures\Source" "-I.\..\..\..\hex_shared\FastKDTreeLibrary" "-I.\..\..\HexmillEngine\external-deps\glew\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\guis" "-I.\..\..\HexmillEngine\HexmillEngine\include" "-I.\..\..\HexmillEngine\HexmillEngine\include\animations" "-I.\..\..\HexmillEngine\external-deps\bullet\include" "-I.\..\..\HexmillEngine\external-deps\freetype2\include" "-I.\..\..\HexmillEngine\external-deps\lua\include" "-I.\..\..\HexmillEngine\external-deps\oggvorbis\include" "-I.\..\..\HexmillEngine\external-deps\openal\include\AL" "-I.\..\..\HexmillEngine\external-deps\png\include" "-I.\..\..\HexmillEngine\external-deps\tinyxml2\include" "-I.\..\..\HexmillEngine\external-deps\zlib\include" "-I$(NOINHERIT)\."</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">Moc%27ing %(Filename).h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">.\GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resource.proto">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Resource.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Resource.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Resource.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./Resource.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./Resource.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./Resource.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">./</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Perception.proto">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Perception.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Perception.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Perception.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./Perception.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./Perception.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./Perception.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">./</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="generator.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="custom.ui">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="QtPredict.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="PerceptionNew.proto">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">protoc.exe --proto_path=. --cpp_out=. ./PerceptionNew.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">./</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">protoc.exe --proto_path=. --cpp_out=. ./PerceptionNew.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./PerceptionNew.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./PerceptionNew.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./PerceptionNew.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">./</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">protoc PerceptionNew.proto</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">protoc PerceptionNew.proto</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">protoc PerceptionNew.proto</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D_Debug|Win32'">protoc PerceptionNew.proto</Message>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ccgamec_config.proto">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">protoc.exe --proto_path=. --cpp_out=. ./ccgamec_config.proto</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">E:\KKProject\Protobuf\protoc.exe --proto_path=. --cpp_out=. ./ccgamec_config.proto</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">protoc ccgamec_config.proto</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">protoc ccgamec_config.proto</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">./</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console_2D|Win32'">./</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Console_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Template2D.proto">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Template2D.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">./</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">protoc Template2D.proto</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Template2D.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Console|Win32'">./</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">protoc.exe --proto_path=. --cpp_out=. ./Template2D.proto</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_Debug|Win32'">./</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
